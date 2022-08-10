@@ -6,6 +6,7 @@ export const TestCreate = (props: CreateProps): React.ReactElement => {
     <Create {...props}>
       <SimpleForm>
         <TextInput label="field1" source="field1" />
+        <TextInput label="field2" source="field2" />
       </SimpleForm>
     </Create>
   );
