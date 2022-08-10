@@ -24,5 +24,16 @@ class TestCreateInput {
     nullable: true,
   })
   field1?: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  field2?: string | null;
 }
 export { TestCreateInput };

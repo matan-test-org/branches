@@ -22,17 +22,6 @@ class Test {
   @Type(() => Date)
   @Field(() => Date)
   createdAt!: Date;
-  
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  field2!: string | null;
 
   @ApiProperty({
     required: false,
@@ -44,6 +33,17 @@ class Test {
     nullable: true,
   })
   field1!: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  field2!: string | null;
 
   @ApiProperty({
     required: true,
